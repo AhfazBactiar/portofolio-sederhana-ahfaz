@@ -60,7 +60,7 @@ a:hover {
 .profile-card {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #4d446b, #7f6e91);
+  background: linear-gradient(135deg, #070118, #37234d);
   color: #fff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -245,4 +245,5 @@ footer {
         border-top-right-radius: 0;
     }
 }
+
 
