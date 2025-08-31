@@ -8,7 +8,7 @@
 
 /* --- Dasar dan Tipografi --- */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
@@ -32,7 +32,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #4d446b;
   font-weight: 700;
 }
@@ -180,4 +180,68 @@ footer {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   font-weight: 300;
+}
+
+/* ========================================= */
+/* --- MEDIA QUERIES UNTUK LAYAR KECIL --- */
+/* ========================================= */
+@media (max-width: 768px) {
+    body {
+        /* Hapus padding agar konten menempel ke sisi HP */
+        padding: 0;
+    }
+
+    .container {
+        /* Sudut yang lebih kecil untuk layar kecil */
+        border-radius: 0; 
+        box-shadow: none;
+    }
+
+    .profile-card {
+        /* Padding lebih kecil */
+        padding: 40px 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .profile-pic {
+        /* Ukuran foto profil lebih kecil */
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        /* Ukuran font header lebih kecil */
+        font-size: 2rem;
+    }
+
+    .profile-card p {
+        /* Ukuran font paragraf lebih kecil */
+        font-size: 1rem;
+    }
+
+    main {
+        /* Padding konten utama lebih kecil */
+        padding: 20px;
+    }
+
+    section {
+        /* Padding bagian lebih kecil */
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        /* Ukuran font judul bagian lebih kecil */
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        /* Hapus sudut footer */
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
