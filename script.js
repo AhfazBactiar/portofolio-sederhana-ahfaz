@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     profesi: "Web Development | Graphic Designer | Content Creator",
     foto: "Ahfaz.jpeg",
     tentang:
-      "Saya mengajar di dua Instansi, yaitu di SMK Negeri 1 Kalianget sebagai guru produktif DKV dan guru Informatika dan di Universitas Bahauddin Mudhary Madura sebagai dosen pendidikan teknologi informasi pengampu mata kuliah pada semester ini adalah pemrograman berbasis platform.",
+      "Saya mengajar di dua Instansi, yaitu di SMK Negeri 1 Kalianget sebagai guru produktif DKV dan guru Informatika dan di Universitas Bahauddin Mudhary Madura sebagai dosen pendidikan teknologi informasi pengampu mata kuliah pada semester ini adalah Platform Based Programing.",
     kontak: {
       email: "IT.gor38@gmail.com",
       telepon: "085 230 787 025",
@@ -133,4 +133,5 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   footerContainer.appendChild(footerText);
 });
+
 
