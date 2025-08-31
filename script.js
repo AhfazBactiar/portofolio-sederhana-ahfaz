@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     kontak: {
       email: "IT.gor38@gmail.com",
       telepon: "085 230 787 025",
-      lokasi: "Kota Anda, Negara Anda",
+      lokasi: "Grand Symphony Paberasan, Kecamatan Kota Sumenep",
     },
     //
     mediaSosial: [
@@ -133,3 +133,4 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   footerContainer.appendChild(footerText);
 });
+
