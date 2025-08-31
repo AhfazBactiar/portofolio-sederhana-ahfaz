@@ -1,23 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //
   const biodata = {
     nama: "Ahfaz Bactiar Febliama, M.Pd",
     profesi: "Web Development | Graphic Designer | Content Creator",
     foto: "Ahfaz.jpeg",
     tentang:
-      "Saya mengajar di dua Instansi, yaitu di SMK Negeri 1 Kalianget sebagai guru produktif DKV dan guru Informatika dan di Universitas Bahauddin Mudhary Madura sebagai dosen pendidikan teknologi informasi pengampu mata kuliah pada semester ini adalah Platform Based Programing.",
+      "Saya mengajar di dua Instansi, yaitu di SMK Negeri 1 Kalianget sebagai guru produktif DKV dan guru Informatika dan di Universitas Bahauddin Mudhary Madura sebagai dosen pendidikan teknologi informasi pengampu mata kuliah pada semester ini adalah pemrograman berbasis platform.",
     kontak: {
       email: "IT.gor38@gmail.com",
       telepon: "085 230 787 025",
-      lokasi: "Grand Symphony Paberasan, Kecamatan Kota Sumenep",
+      lokasi: "Paberasan, Kecamatan Kota Sumenep",
     },
-    //
     mediaSosial: [
       { nama: "Tiktok", url: "https://tiktok.com/@ahfazbactiar" },
       { nama: "GitHub", url: "https://github.com/ahfazbactiar" },
       { nama: "Instagram", url: "https://instagram.com/Yus_Splash" },
     ],
-
     projects: [
       {
         nama: "Website Sekolah",
@@ -34,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   };
 
-  //
   function createElement(tag, className, content = "") {
     const element = document.createElement(tag);
     if (className) {
@@ -46,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return element;
   }
 
-  //
   const headerContainer = document.getElementById("header-container");
   const profileCard = createElement("div", "profile-card");
 
@@ -62,16 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
   profileCard.appendChild(profesiParagraph);
   headerContainer.appendChild(profileCard);
 
-  // 4. Menangani Main Content
   const mainContainer = document.getElementById("main-container");
 
-  // Bagian Tentang Saya
   const aboutSection = createElement("section", "about-me");
   aboutSection.appendChild(createElement("h2", "", "Tentang Saya"));
   aboutSection.appendChild(createElement("p", "", biodata.tentang));
   mainContainer.appendChild(aboutSection);
 
-  // Bagian Detail Kontak
   const contactSection = createElement("section", "details");
   contactSection.appendChild(createElement("h2", "", "Detail Kontak"));
   const contactList = createElement("ul");
@@ -88,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   contactSection.appendChild(contactList);
   mainContainer.appendChild(contactSection);
 
-  // Tambahkan bagian Project di sini
   const projectsSection = createElement("section", "projects");
   projectsSection.appendChild(createElement("h2", "", "Proyek"));
   const projectsList = createElement("ul");
@@ -108,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
   projectsSection.appendChild(projectsList);
   mainContainer.appendChild(projectsSection);
 
-  // Bagian Media Sosial
   const socialSection = createElement("section", "social-media");
   socialSection.appendChild(createElement("h2", "", "Media Sosial"));
   const socialList = createElement("ul");
@@ -123,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
   socialSection.appendChild(socialList);
   mainContainer.appendChild(socialSection);
 
-  // 5. Menangani Footer
   const footerContainer = document.getElementById("footer-container");
   const currentYear = new Date().getFullYear();
   const footerText = createElement(
@@ -133,5 +122,3 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   footerContainer.appendChild(footerText);
 });
-
-
