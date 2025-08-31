@@ -1,83 +1,183 @@
+/* Palet Warna:
+   - Hijau Keunguan: #4d446b (untuk aksen dan latar belakang)
+   - Hijau Terang: #7f6e91 (untuk highlight)
+   - Abu-abu Gelap: #333 (untuk teks utama)
+   - Abu-abu Muda: #f0f0f0 (untuk latar belakang)
+   - Putih: #ffffff
+*/
+
+/* --- Dasar dan Tipografi --- */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7f6;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-.profile-card {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #adb4bb;
-  transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.1);
-}
-
-h1 {
-  color: #03172d;
-  margin-top: 10px;
-}
-
-p {
-  color: #666;
-}
-
-main {
-  max-width: 800px;
-  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
-section {
-  margin-bottom: 25px;
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #4d446b;
+  font-weight: 700;
 }
 
 h2 {
-  border-bottom: 2px solid #03172d;
+  font-size: 1.5rem;
+  margin-top: 0;
+  border-bottom: 2px solid #7f6e91;
   padding-bottom: 5px;
-  color: #03172d;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 a {
-  color: #007bff;
+  color: #4d446b;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #7f6e91;
 }
 
+/* --- Bagian Header --- */
+.profile-card {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #4d446b, #7f6e91);
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 7px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.9;
+  color: #f0f0f0;
+}
+
+/* --- Konten Utama --- */
+main {
+  padding: 40px;
+}
+
+section {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-me p {
+  text-align: justify;
+}
+
+/* Styling untuk daftar (ul) */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+li {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #7f6e91;
+  transition: transform 0.2s ease, border-left-color 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(5px);
+  border-left-color: #4d446b;
+}
+
+.details strong {
+  color: #4d446b;
+}
+
+/* Proyek */
+.projects h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #4d446b;
+}
+
+.projects li {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects a {
+  margin-top: 10px;
+  align-self: flex-start;
+  padding: 8px 15px;
+  background-color: #7f6e91;
+  color: #fff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.projects a:hover {
+  background-color: #4d446b;
+}
+
+/* --- Footer --- */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #f4f7f6;
-  margin-top: 20px;
+  padding: 25px;
+  background-color: #4d446b;
+  color: #f0f0f0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-weight: 300;
 }
