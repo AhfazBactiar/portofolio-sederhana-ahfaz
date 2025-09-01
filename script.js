@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         nama: "Website Sekolah",
         deskripsi:
-          "Proyek ini adalah website yang saya bangun dalm beberapa bulan terakhir.",
+          "Proyek ini adalah website yang saya bangun dalam beberapa bulan terakhir.",
         url: "https://smk1kalianget.sch.id/",
       },
       {
         nama: "Website DKV",
         deskripsi:
-          "website sederhana untuk menampilkan hasil karya siswa DKV dan lain-;ain.",
+          "website sederhana untuk menampilkan hasil karya siswa DKV dan lain-lain.",
         url: "https://www.dkvsmkn1kalianget.com/home",
       },
     ],
@@ -122,3 +122,4 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   footerContainer.appendChild(footerText);
 });
+
