@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "Saya mengajar di dua Instansi, yaitu di SMK Negeri 1 Kalianget sebagai guru produktif DKV dan guru Informatika dan di Universitas Bahauddin Mudhary Madura sebagai dosen pendidikan teknologi informasi pengampu mata kuliah pada semester ini adalah pemrograman berbasis platform.",
     kontak: {
       email: "IT.gor38@gmail.com",
-      telepon: "085 230 787 025",
-      lokasi: "Paberasan, Kecamatan Kota Sumenep",
+      telepon: "+62852 3078 7025",
+      lokasi: "Perum Grand Symphony, Paberasan, Kecamatan Kota Sumenep",
     },
     mediaSosial: [
       { nama: "Tiktok", url: "https://tiktok.com/@ahfazbactiar" },
@@ -122,4 +122,5 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   footerContainer.appendChild(footerText);
 });
+
 
